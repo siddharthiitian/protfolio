@@ -167,7 +167,7 @@
                     </div>
                     <!-- HUD Overlays -->
                     <div class="absolute top-8 right-8 z-20 flex flex-col gap-2 items-end">
-                        <div class="text-[10px] font-mono text-primary/60 bg-primary/5 px-2 py-1 border border-primary/20 backdrop-blur-sm uppercase">Subject: 001_SATO</div>
+                        <div class="text-[10px] font-mono text-primary/60 bg-primary/5 px-2 py-1 border border-primary/20 backdrop-blur-sm uppercase">Subject: 001_SID</div>
                         <div class="text-[10px] font-mono text-primary/60 bg-primary/5 px-2 py-1 border border-primary/20 backdrop-blur-sm uppercase">Auth: Lead_Researcher</div>
                     </div>
                     <div class="absolute bottom-8 left-8 z-20 max-w-[200px]">
@@ -190,10 +190,16 @@
         <footer class="w-full max-w-[1400px] mx-auto px-6 lg:px-20 py-6 border-t border-primary/5 flex justify-between items-center text-[10px] font-mono text-primary/40 tracking-widest uppercase">
             <div>Coordinate: 35.6895° N, 139.6917° E</div>
             <div class="flex gap-6">
-                <span>System_Clock: 14:22:09_JST</span>
+                <span id="time"></span><script>
+                        setInterval(() => {
+                            const today = new Date();
+                            const options = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                            document.getElementById('time').innerHTML = today.toLocaleString('en-US', options);
+                        }, 1000);
+                        </script>
                 <span class="text-primary/70">Packet_Loss: 0.00%</span>
             </div>
-            <div class="hidden sm:block">Akihiro_Sato // Data_Science_Division © 2024</div>
+            <div class="hidden sm:block">Siddharth Prakash // Data_Science_Division © 2024</div>
         </footer>
     </div>
     <script src="js/script.js"></script>
