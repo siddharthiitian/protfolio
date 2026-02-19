@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Mission Report: Neural Synapse Mapping</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff00ff",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#101022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #ff00ff;
+        }
+        .grid-bg {
+            background-image: linear-gradient(to right, rgba(255, 0, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 0, 255, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark overflow-x-hidden">
+    <div class="fixed inset-0 grid-bg opacity-50 pointer-events-none"></div>
+    <div class="scanline" style="background: rgba(255, 0, 255, 0.1);"></div>
+
+    <header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-dark/80 backdrop-blur-md px-6 py-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="projects.html" class="flex items-center gap-2 text-primary hover:underline glitch">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span class="text-xs font-bold uppercase tracking-widest">Back to Missions</span>
+            </a>
+            <nav class="flex gap-6">
+                <a href="index.html" class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-5xl mx-auto px-4 py-8 md:px-8">
+        <!-- Header Section -->
+        <header class="mb-10 border-l-4 border-primary pl-6 py-2">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="inline-block w-2 h-2 bg-primary animate-pulse"></span>
+                <span class="text-primary text-xs font-bold tracking-[0.2em] uppercase">Status: Decrypted // Researcher Access Only</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tighter uppercase leading-none" data-typewriter="Mission: Neural Synapse Mapping">
+            </h1>
+            <div class="mt-4 flex flex-wrap gap-4 text-xs font-mono opacity-70">
+                <span class="border border-primary/30 px-2 py-1">COORD: 35.6895° N, 139.6917° E</span>
+                <span class="border border-primary/30 px-2 py-1">TIMESTAMP: 2024.05.21_14:30:01_Z</span>
+            </div>
+        </header>
+
+        <!-- Metadata Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+            <div class="relative p-6 border border-primary/20 bg-primary/5 rounded hud-border">
+                <p class="text-xs text-primary/60 font-bold tracking-widest uppercase mb-1">Priority</p>
+                <p class="text-2xl font-bold tracking-tight">ALPHA-9</p>
+            </div>
+            <div class="relative p-6 border border-primary/20 bg-primary/5 rounded hud-border">
+                <p class="text-xs text-primary/60 font-bold tracking-widest uppercase mb-1">Researcher</p>
+                <p class="text-2xl font-bold tracking-tight text-primary">USER_KAIZEN</p>
+            </div>
+            <div class="relative p-6 border border-primary/20 bg-primary/5 rounded hud-border">
+                <p class="text-xs text-primary/60 font-bold tracking-widest uppercase mb-1">Synaptic Sync</p>
+                <p class="text-2xl font-bold tracking-tight">98.42%</p>
+            </div>
+        </section>
+
+        <!-- Mission Briefing -->
+        <section class="mb-10 group">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-bold tracking-widest flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">description</span>
+                    MISSION BRIEFING
+                </h2>
+                <div class="h-[1px] flex-grow bg-primary/20 ml-4"></div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="flex-1 space-y-4 text-slate-400 leading-relaxed font-light">
+                    <p>
+                        The objective of <span class="text-slate-100 font-medium">Neural Synapse Mapping</span> was to architect a high-dimensional manifold capable of representing biological neural pathways through synthetic weights.
+                    </p>
+                    <p>
+                        Our team implemented a recursive auto-encoder architecture to compress synaptical firing patterns into a lower-dimensional latent space.
+                    </p>
+                    <div class="bg-primary/10 border-l-2 border-primary p-4 text-sm italic">
+                        "The boundary between biological intent and algorithmic execution is thinning." — Head Researcher Report.
+                    </div>
+                </div>
+                <div class="lg:w-1/3">
+                    <div class="aspect-square relative rounded border border-primary/20 overflow-hidden group">
+                        <img alt="Neural visualization" class="object-cover w-full h-full opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVtlVcrZ3l5OpNgXsDQKp52ftng0ee1PgWzggLmOYskCjrQSNMhyGtd5jSzl0175uxmJZYXJI3gdBhzmN8-q5Rs-WM8_JcLYyDnB5_QcoPsUKKiOw5l2QLs3ZOsNfZqe55PSG3Il0pQS-oID3ikpImJEsAQ24kgWudS8t2ZV2pYTxOS1jgJKZJfpoGlKY16kyIf3koVI3RTeuU-YrHgoFf2FYAM_Ao7uZiMfRUS_ffH0KLehcoLghLzZdTE-6m3qWswc7uaJaJ2687"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="mb-10">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-bold tracking-widest flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">terminal</span>
+                    TECH STACK
+                </h2>
+                <div class="h-[1px] flex-grow bg-primary/20 ml-4"></div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <div class="px-4 py-2 border border-primary/40 bg-primary/5 text-primary text-xs font-bold tracking-widest flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-primary"></span> [ PYTHON ]
+                </div>
+                <div class="px-4 py-2 border border-primary/40 bg-primary/5 text-primary text-xs font-bold tracking-widest flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-primary"></span> [ PYTORCH ]
+                </div>
+                <div class="px-4 py-2 border border-primary/40 bg-primary/5 text-primary text-xs font-bold tracking-widest flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-primary"></span> [ SCIKIT-LEARN ]
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Actions -->
+        <div class="mt-20 flex flex-col md:flex-row gap-4 items-center justify-center">
+            <button class="w-full md:w-auto px-8 py-3 bg-primary text-background-dark font-bold tracking-widest text-sm rounded transition-all hover:bg-white hover:scale-105 flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-sm">download</span>
+                DOWNLOAD DATASET
+            </button>
+            <button class="w-full md:w-auto px-8 py-3 border border-primary text-primary font-bold tracking-widest text-sm rounded transition-all hover:bg-primary/10 hover:scale-105 flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-sm">code</span>
+                VIEW SOURCE
+            </button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

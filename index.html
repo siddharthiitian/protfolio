@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SATO_AKIHIRO // LEAD DATA SCIENTIST</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#25f4f4",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#102222",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark">
+    <div class="scanline"></div>
+    <!-- Main Container -->
+    <div class="relative flex flex-col min-h-screen w-full overflow-x-hidden">
+        <!-- Top Navigation Bar -->
+        <header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+            <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary scale-110">terminal</span>
+                    <h1 class="text-lg font-bold tracking-tighter uppercase">
+                        SATO_AKIHIRO <span class="text-primary/60 font-light mx-1">//</span> <span class="text-primary">LEAD DATA SCIENTIST</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-medium text-primary transition-colors tracking-widest uppercase" href="index.html">Home</a>
+                    <a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors tracking-widest uppercase" href="projects.html">Projects</a>
+                    <a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors tracking-widest uppercase" href="about.html">About</a>
+                    <a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors tracking-widest uppercase" href="https://drive.google.com/your-resume-link" target="_blank">Resume</a>
+                </nav>
+                <div class="flex items-center gap-6">
+                    <button class="hidden lg:flex items-center gap-2 group">
+                        <span class="text-xs font-bold tracking-[0.2em] text-primary group-hover:underline">NETWORK_STATUS</span>
+                        <div class="size-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#25f4f4]"></div>
+                    </button>
+                    <a href="projects.html" class="bg-primary text-background-dark px-6 py-2 text-xs font-bold uppercase tracking-widest rounded-sm hover:brightness-110 transition-all glow-sm">
+                        Access Projects
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Split-Section -->
+        <main class="flex-1 max-w-[1400px] mx-auto w-full px-6 lg:px-20 py-12 flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Side: Narrative and Metrics -->
+            <div class="order-2 lg:order-1 flex flex-col gap-10 w-full">
+                <div class="hud-border bg-primary/5 p-8 border border-primary/10">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-[10px] font-bold text-primary tracking-[0.3em] uppercase">System Objective: Mission Profile</span>
+                        <div class="h-[1px] flex-1 bg-primary/20"></div>
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                        Engineering the future through <span class="text-primary italic" data-typewriter="neural synthesis">neural synthesis</span>.
+                    </h2>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-8 max-w-xl">
+                        Lead Data Scientist specializing in high-dimensional neural architectures and predictive modeling. Operating from Tokyo Neo-Sector to decode complex data patterns into actionable cyber-intelligence.
+                    </p>
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <div class="flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 text-[10px] font-bold text-primary tracking-widest rounded-full uppercase">
+                            <span class="material-symbols-outlined text-xs">location_on</span> Tokyo_Neo_Sector
+                        </div>
+                        <div class="flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 text-[10px] font-bold text-primary tracking-widest rounded-full uppercase">
+                            <span class="material-symbols-outlined text-xs">sensors</span> Status: Online
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Metrics Dashboard -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <!-- Metric 1 -->
+                    <div class="flex flex-col gap-2 p-5 border border-primary/20 bg-background-dark/50 backdrop-blur-sm relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-1 opacity-20 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-primary text-sm">trending_up</span>
+                        </div>
+                        <p class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase">Models Deployed</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-bold">124</span>
+                            <span class="text-[10px] text-green-400 font-bold">+12%</span>
+                        </div>
+                        <div class="w-full h-1 bg-primary/10 mt-2 overflow-hidden">
+                            <div class="h-full bg-primary w-[75%] shadow-[0_0_8px_#25f4f4]"></div>
+                        </div>
+                    </div>
+                    <!-- Metric 2 -->
+                    <div class="flex flex-col gap-2 p-5 border border-primary/20 bg-background-dark/50 backdrop-blur-sm relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-1 opacity-20 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-primary text-sm">bolt</span>
+                        </div>
+                        <p class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase">Accuracy Avg</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-bold">98.4%</span>
+                            <span class="text-[10px] text-green-400 font-bold">+0.2%</span>
+                        </div>
+                        <div class="w-full h-1 bg-primary/10 mt-2 overflow-hidden">
+                            <div class="h-full bg-primary w-[94%] shadow-[0_0_8px_#25f4f4]"></div>
+                        </div>
+                    </div>
+                    <!-- Metric 3 -->
+                    <div class="flex flex-col gap-2 p-5 border border-primary/20 bg-background-dark/50 backdrop-blur-sm relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-1 opacity-20 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-primary text-sm">code</span>
+                        </div>
+                        <p class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase">Lines of Code</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-bold text-nowrap">450k+</span>
+                            <span class="text-[10px] text-green-400 font-bold">+15%</span>
+                        </div>
+                        <div class="w-full h-1 bg-primary/10 mt-2 overflow-hidden">
+                            <div class="h-full bg-primary w-[60%] shadow-[0_0_8px_#25f4f4]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Terminal Links -->
+                <div class="flex items-center gap-8 mt-4 pt-6 border-t border-primary/10">
+                    <a class="flex items-center gap-2 text-slate-500 hover:text-primary transition-colors glitch" href="#">
+                        <span class="material-symbols-outlined text-lg">terminal</span>
+                        <span class="text-[10px] font-bold tracking-widest uppercase">Github</span>
+                    </a>
+                    <a class="flex items-center gap-2 text-slate-500 hover:text-primary transition-colors glitch" href="#">
+                        <span class="material-symbols-outlined text-lg">hub</span>
+                        <span class="text-[10px] font-bold tracking-widest uppercase">Kaggle</span>
+                    </a>
+                    <a class="flex items-center gap-2 text-slate-500 hover:text-primary transition-colors glitch" href="#">
+                        <span class="material-symbols-outlined text-lg">lan</span>
+                        <span class="text-[10px] font-bold tracking-widest uppercase">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Portrait -->
+            <div class="order-1 lg:order-2 relative w-full aspect-[4/5] lg:aspect-auto lg:h-[700px]">
+                <!-- Decorative Hud Elements Around Image -->
+                <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary/30 z-20"></div>
+                <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary/30 z-20"></div>
+                <div class="relative w-full h-full border border-primary/20 overflow-hidden bg-background-dark/80 group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent z-10"></div>
+                    <!-- Portrait Image Placeholder -->
+                    <div class="w-full h-full bg-center bg-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9Ry9x0y0cVtefXx7OauTSq_qLPXKIZ7Lypnb6AgFIk_fwCXcg7VRZ7QQeUUdcsEoAheCS2Uo7etNkwRXhO0YV1SC_spWepjm3RoklTWIENa2J64PNvsKncTx33kvaN8fLo2Pmxt0S9wREp_-xISnc_ghIYiLgyLytIMgx3brIm7s-tKGrjh3IE-McjDTJx-LgIge29RmJMi-zf_dEW8p5-tNgxZRR_aupFI22vM0ER2v3f6SyN1JY2jUhh7UsNG0FhBQwX5xCBfyo");'>
+                    </div>
+                    <!-- HUD Overlays -->
+                    <div class="absolute top-8 right-8 z-20 flex flex-col gap-2 items-end">
+                        <div class="text-[10px] font-mono text-primary/60 bg-primary/5 px-2 py-1 border border-primary/20 backdrop-blur-sm uppercase">Subject: 001_SATO</div>
+                        <div class="text-[10px] font-mono text-primary/60 bg-primary/5 px-2 py-1 border border-primary/20 backdrop-blur-sm uppercase">Auth: Lead_Researcher</div>
+                    </div>
+                    <div class="absolute bottom-8 left-8 z-20 max-w-[200px]">
+                        <div class="text-[10px] font-mono text-primary mb-2 flex items-center gap-2">
+                            <span class="size-1 bg-primary animate-ping"></span> BIOMETRIC_SCAN_ACTIVE
+                        </div>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="h-1 bg-primary"></div>
+                            <div class="h-1 bg-primary"></div>
+                            <div class="h-1 bg-primary/40"></div>
+                            <div class="h-1 bg-primary/40"></div>
+                            <div class="h-1 bg-primary/40"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Floating Coordinates / Bottom HUD -->
+        <footer class="w-full max-w-[1400px] mx-auto px-6 lg:px-20 py-6 border-t border-primary/5 flex justify-between items-center text-[10px] font-mono text-primary/40 tracking-widest uppercase">
+            <div>Coordinate: 35.6895° N, 139.6917° E</div>
+            <div class="flex gap-6">
+                <span>System_Clock: 14:22:09_JST</span>
+                <span class="text-primary/70">Packet_Loss: 0.00%</span>
+            </div>
+            <div class="hidden sm:block">Akihiro_Sato // Data_Science_Division © 2024</div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

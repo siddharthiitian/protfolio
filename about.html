@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SATO_AKIHIRO // ABOUT</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ffae00",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#1a1510",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #ffae00;
+        }
+        body {
+            background-image:
+                linear-gradient(to right, rgba(255, 174, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 174, 0, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark">
+    <div class="scanline" style="background: rgba(255, 174, 0, 0.1);"></div>
+
+    <header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary scale-110">person</span>
+                <h1 class="text-lg font-bold tracking-tighter uppercase">
+                    ABOUT_RESEARCHER <span class="text-primary/60 font-light mx-1">//</span> <span class="text-primary">SATO_AKIHIRO</span>
+                </h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors tracking-widest uppercase" href="index.html">Home</a>
+                <a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors tracking-widest uppercase" href="projects.html">Projects</a>
+                <a class="text-sm font-medium text-primary transition-colors tracking-widest uppercase" href="about.html">About</a>
+                <a class="text-sm font-medium text-slate-400 hover:text-primary transition-colors tracking-widest uppercase" href="https://drive.google.com/your-resume-link" target="_blank">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-[1400px] mx-auto px-6 lg:px-20 py-12 flex flex-col gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Bio Section -->
+            <div class="order-2 lg:order-1 flex flex-col gap-8">
+                <div class="hud-border bg-primary/5 p-8 border border-primary/10">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-[10px] font-bold text-primary tracking-[0.3em] uppercase">Identity Verification: Successful</span>
+                        <div class="h-[1px] flex-1 bg-primary/20"></div>
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6 leading-tight uppercase" data-typewriter="The Researcher Profile"></h2>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                        Akihiro Sato is a Lead Data Scientist at the forefront of neural synthesis and high-dimensional data analysis. With a background in computational neuroscience and machine learning, he bridges the gap between biological intelligence and algorithmic execution.
+                    </p>
+                    <p class="text-slate-400 text-lg leading-relaxed">
+                        Operating from the Tokyo Neo-Sector, Akihiro focuses on developing resilient neural architectures capable of navigating the complexities of decentralized data networks.
+                    </p>
+                </div>
+
+                <!-- Attributes Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="border border-primary/20 p-5 bg-background-dark/50 relative group overflow-hidden">
+                        <p class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase mb-2">Primary Directive</p>
+                        <p class="text-xl font-bold">Neural Optimization</p>
+                    </div>
+                    <div class="border border-primary/20 p-5 bg-background-dark/50 relative group overflow-hidden">
+                        <p class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase mb-2">Current Location</p>
+                        <p class="text-xl font-bold">Neo-Tokyo_S01</p>
+                    </div>
+                    <div class="border border-primary/20 p-5 bg-background-dark/50 relative group overflow-hidden">
+                        <p class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase mb-2">Auth Level</p>
+                        <p class="text-xl font-bold">LEAD_RSCH_09</p>
+                    </div>
+                    <div class="border border-primary/20 p-5 bg-background-dark/50 relative group overflow-hidden">
+                        <p class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase mb-2">Uptime</p>
+                        <p class="text-xl font-bold">99.98%_BIOMETRIC</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="order-1 lg:order-2 relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary/30"></div>
+                <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary/30"></div>
+                <div class="aspect-square border border-primary/20 overflow-hidden bg-background-dark group">
+                    <img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwJ1RwoIvRWGL3WZW-J2zfPyf-XUL8kRwuohMlHgsC9j5x4XPTZSH3sFsrQFS9pJuMx5vl-vnHV_OGJHdqvA6a7ZCED3Vj6VnuwHmaGUTR_VeKWkU1gvs1n8Fr3blq6haTUQwVzYRhA1UpZauaLS6-AkNwHwIUj35s-eGYl4xHqUh0SZn4mD7PozqKGe5GojJdyy2XIAvWetr0Rnn4Bel095l6LPOHZdTUH027PWvbCevZdfAhPilKpPwsYY7Z7-BolAjW_axOseL7" alt="Akihiro Sato Profile">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/60 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full max-w-[1400px] mx-auto px-6 lg:px-20 py-8 border-t border-primary/10 flex justify-between items-center text-[10px] font-mono text-primary/40 tracking-widest uppercase">
+        <div>System_About_Module_V1.0</div>
+        <div>2024 AKIHIRO_SYSTEMS</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

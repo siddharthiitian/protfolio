@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Akihiro Portfolio | Active Missions</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00ff41",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0a0c0c",
+                        "surface-dark": "#161e1e",
+                        "accent-dark": "#0e1a0e",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #00ff41;
+        }
+        body {
+            background-image:
+                linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="scanline" style="background: rgba(0, 255, 65, 0.1);"></div>
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-3">
+        <div class="max-w-[1600px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="size-6 text-primary">
+                        <span class="material-symbols-outlined fill-1">terminal</span>
+                    </div>
+                    <h1 class="text-xl font-bold tracking-tighter uppercase">Akihiro<span class="text-primary">.OS</span></h1>
+                </div>
+                <nav class="hidden md:flex items-center gap-6">
+                    <a class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                    <a class="text-xs uppercase tracking-widest font-medium text-primary border-b-2 border-primary" href="projects.html">Active_Missions</a>
+                    <a class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors" href="about.html">About</a>
+                    <a class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors" href="https://drive.google.com/your-resume-link" target="_blank">Resume</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="hidden lg:flex items-center gap-4 text-xs font-mono text-primary/60">
+                    <span class="flex items-center gap-2">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        SYS_UPTIME: 99.9%
+                    </span>
+                    <span>14:32:04 UTC</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-accent-dark/50 border border-primary/20 rounded px-3 py-1.5 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm text-primary">search</span>
+                        <input class="bg-transparent border-none focus:ring-0 text-xs w-32 placeholder:text-primary/30" placeholder="Search files..." type="text"/>
+                    </div>
+                    <div class="size-9 rounded bg-primary/20 border border-primary flex items-center justify-center overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwJ1RwoIvRWGL3WZW-J2zfPyf-XUL8kRwuohMlHgsC9j5x4XPTZSH3sFsrQFS9pJuMx5vl-vnHV_OGJHdqvA6a7ZCED3Vj6VnuwHmaGUTR_VeKWkU1gvs1n8Fr3blq6haTUQwVzYRhA1UpZauaLS6-AkNwHwIUj35s-eGYl4xHqUh0SZn4mD7PozqKGe5GojJdyy2XIAvWetr0Rnn4Bel095l6LPOHZdTUH027PWvbCevZdfAhPilKpPwsYY7Z7-BolAjW_axOseL7"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row min-h-[calc(100vh-64px)]">
+        <!-- Mission Control Sidebar -->
+        <aside class="w-full lg:w-72 border-r border-primary/10 p-6 flex flex-col gap-8 bg-background-light dark:bg-background-dark/40">
+            <div>
+                <h2 class="text-[10px] uppercase tracking-[0.2em] text-primary/60 mb-4 font-bold">Navigation_Module</h2>
+                <div class="flex flex-col gap-1">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded bg-primary/10 border border-primary/30 text-primary group" href="projects.html">
+                        <span class="material-symbols-outlined text-lg fill-1">grid_view</span>
+                        <span class="text-sm font-medium">All Missions</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded hover:bg-primary/5 transition-all text-slate-400 hover:text-primary group" href="#">
+                        <span class="material-symbols-outlined text-lg">psychology</span>
+                        <span class="text-sm font-medium">Neural Networks</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded hover:bg-primary/5 transition-all text-slate-400 hover:text-primary group" href="#">
+                        <span class="material-symbols-outlined text-lg">forum</span>
+                        <span class="text-sm font-medium">NLP Engine</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded hover:bg-primary/5 transition-all text-slate-400 hover:text-primary group" href="#">
+                        <span class="material-symbols-outlined text-lg">visibility</span>
+                        <span class="text-sm font-medium">Computer Vision</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded hover:bg-primary/5 transition-all text-slate-400 hover:text-primary group" href="#">
+                        <span class="material-symbols-outlined text-lg">equalizer</span>
+                        <span class="text-sm font-medium">Signal Processing</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-auto">
+                <div class="p-4 border border-primary/20 bg-accent-dark/30 rounded-lg">
+                    <p class="text-[10px] uppercase tracking-widest text-primary/60 mb-2">System_Alert</p>
+                    <p class="text-xs leading-relaxed text-slate-300">New mission parameters received. Update required for 'Vision-Alpha' datasets.</p>
+                    <div class="mt-3 flex items-center gap-2">
+                        <div class="h-1 flex-1 bg-primary/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary w-2/3"></div>
+                        </div>
+                        <span class="text-[10px] text-primary">67%</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 p-6 lg:p-10 flex flex-col gap-8">
+            <!-- Statistics Bar -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="border border-primary/20 bg-accent-dark/20 p-5 flex items-center justify-between group hover:border-primary/40 transition-colors">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-primary/60">Total_Missions</span>
+                        <span class="text-3xl font-bold tracking-tight">128</span>
+                    </div>
+                    <div class="text-primary text-xs font-mono flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">trending_up</span>
+                        +12%
+                    </div>
+                </div>
+                <div class="border border-primary/20 bg-accent-dark/20 p-5 flex items-center justify-between group hover:border-primary/40 transition-colors">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-primary/60">Active_Threads</span>
+                        <span class="text-3xl font-bold tracking-tight">05</span>
+                    </div>
+                    <div class="text-primary text-xs font-mono flex items-center gap-1 uppercase">
+                        Stable
+                    </div>
+                </div>
+                <div class="border border-primary/20 bg-accent-dark/20 p-5 flex items-center justify-between group hover:border-primary/40 transition-colors">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-primary/60">Data_Ingested</span>
+                        <span class="text-3xl font-bold tracking-tight">2.4 TB</span>
+                    </div>
+                    <div class="text-orange-400 text-xs font-mono flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">warning</span>
+                        LOW_DISK
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission List Heading -->
+            <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <h2 class="text-2xl font-bold uppercase tracking-tight" data-typewriter="Active_Missions_Log"></h2>
+                    <div class="flex items-center gap-4 text-xs font-mono text-primary/50">
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">folder_open</span> Projects / Neural_Nets</span>
+                        <span>|</span>
+                        <span>Showing 6 of 24 entries</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <article class="relative group border border-primary/10 bg-accent-dark/10 p-6 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5 transition-all">
+                    <div class="flex items-start justify-between">
+                        <div class="font-mono text-[10px] text-primary bg-primary/10 px-2 py-0.5 border border-primary/20">#DS-042</div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-widest text-primary font-bold">Active</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Neural Synapse Mapping</h3>
+                        <p class="text-sm text-slate-400 mt-2 leading-relaxed">Quantifying neural connectivity in synthetic organic frameworks using unsupervised reinforcement learning.</p>
+                    </div>
+                    <div class="mt-auto pt-4 flex items-center gap-3">
+                        <a href="mission-neural.html" class="flex-1 bg-primary border border-primary text-background-dark px-4 py-2 text-xs font-bold text-center uppercase tracking-widest hover:bg-transparent hover:text-primary transition-all">Access File</a>
+                    </div>
+                </article>
+                <!-- Card 2 -->
+                <article class="relative group border border-primary/10 bg-accent-dark/10 p-6 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5 transition-all">
+                    <div class="flex items-start justify-between">
+                        <div class="font-mono text-[10px] text-primary bg-primary/10 px-2 py-0.5 border border-primary/20">#DS-109</div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Standby</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Sentiment Entropy Analyzer</h3>
+                        <p class="text-sm text-slate-400 mt-2 leading-relaxed">Analyzing linguistic decay and sentiment shifts in decentralized social networks.</p>
+                    </div>
+                    <div class="mt-auto pt-4 flex items-center gap-3">
+                        <button class="flex-1 bg-primary border border-primary text-background-dark px-4 py-2 text-xs font-bold uppercase tracking-widest hover:bg-transparent hover:text-primary transition-all">Access File</button>
+                    </div>
+                </article>
+                <!-- Card 3 -->
+                <article class="relative group border border-primary/10 bg-accent-dark/10 p-6 flex flex-col gap-4 hover:border-primary/50 hover:bg-primary/5 transition-all">
+                    <div class="flex items-start justify-between">
+                        <div class="font-mono text-[10px] text-primary bg-primary/10 px-2 py-0.5 border border-primary/20">#DS-088</div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-[10px] uppercase tracking-widest text-primary font-bold">Active</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Vision-X Spectral Mapping</h3>
+                        <p class="text-sm text-slate-400 mt-2 leading-relaxed">Automated classification of non-visible spectral data from orbital imagery.</p>
+                    </div>
+                    <div class="mt-auto pt-4 flex items-center gap-3">
+                        <button class="flex-1 bg-primary border border-primary text-background-dark px-4 py-2 text-xs font-bold uppercase tracking-widest hover:bg-transparent hover:text-primary transition-all">Access File</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
