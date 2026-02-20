@@ -17,8 +17,8 @@ content="frame-src https://www.youtube.com https://www.youtube-nocookie.com http
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#ff00ff",
-                        "background-light": "#f5f8f8",
+                        "primary": "#00f2ff",
+                        "background-light": "#f5f8f7",
                         "background-dark": "#101022",
                     },
                     fontFamily: {
@@ -36,18 +36,18 @@ content="frame-src https://www.youtube.com https://www.youtube-nocookie.com http
     </script>
     <style>
         :root {
-            --primary-color: #ff00ff;
+            --primary-color: #00f2ff;
         }
         .grid-bg {
-            background-image: linear-gradient(to right, rgba(255, 0, 255, 0.05) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(255, 0, 255, 0.05) 1px, transparent 1px);
+            background-image: linear-gradient(to right, rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
             background-size: 20px 20px;
         }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-background-dark overflow-x-hidden">
     <div class="fixed inset-0 grid-bg opacity-50 pointer-events-none"></div>
-    <div class="scanline" style="background: rgba(255, 0, 255, 0.1);"></div>
+    <div class="scanline" style="background: rgba(0, 242, 255, 0.1);"></div>
 
     <header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-dark/80 backdrop-blur-md px-6 py-4">
         <div class="max-w-5xl mx-auto flex items-center justify-between">
@@ -58,6 +58,7 @@ content="frame-src https://www.youtube.com https://www.youtube-nocookie.com http
             <nav class="flex gap-6">
                 <a href="index.html" class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors">Home</a>
                 <a href="about.html" class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors">About</a>
+                <a href="resume.html" class="text-xs uppercase tracking-widest font-medium hover:text-primary transition-colors">Resume</a>
             </nav>
         </div>
     </header>
